@@ -1,0 +1,89 @@
+ body {
+      background: linear-gradient(to right, #fdf2e9, #fef9f4);
+      overflow-x: hidden; /*      is used to hide horizontal overflow/scroll*/
+    }
+
+    .navbar {
+      position: sticky;/*an element stick to a defined position as you scroll*/
+      top: 0;
+      z-index: 1000;
+    }
+    
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+    }
+    /*.hero img {
+      max-width: 300px;
+      margin-left: 30px;
+      background-color: #fff5ed; 
+      display: inline-block;
+      border: 5px solid #fff5ed;
+
+    }*/
+    .images {
+  width: 45%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+}
+
+.images img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape {
+  bottom: 40px;
+}
+
+.images:hover .girl {
+  left: 45%;
+}
+    .section {
+      padding: 80px 20px;
+    }
+
+      .skills-section {
+      padding: 60px 15px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .skill-card {
+      background-color: #fff;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .skill-icon {
+      font-size: 40px;
+      color: #ff7f50;
+      margin-bottom: 15px;
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #444;
+    }
