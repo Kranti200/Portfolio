@@ -44,11 +44,11 @@ transition: transform 0.3s ease;
 
 
    .images {
-  width: 45%;
+  width: 40%;
   height: 80%;
   position: absolute;
   bottom: 2;
-  right: 100px;
+  right: 50px;
 }
 
 .images img {
